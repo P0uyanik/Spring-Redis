@@ -19,7 +19,6 @@ public class UserController {
 
     @PostMapping("/new-role")
     public void addNewRole(@RequestBody RoleDto roleDto) {
-        log.error("controller role {}", roleDto);
         userService.addNewRole(roleDto);
     }
 
